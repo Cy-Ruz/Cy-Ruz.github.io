@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Components / Accordion</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="img/logo2.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="quill/quill.snow.css" rel="stylesheet" />
+    <link href="quill/quill.bubble.css" rel="stylesheet" />
+    <link href="remixicon/remixicon.css" rel="stylesheet" />
+    <link href="simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="admin.html" class="logo d-flex align-items-center">
+          <img src="img/logo2.png" alt="" />
+          <span class="d-none d-lg-block">Art Gallery</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a
+            ><!-- End Notification Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-chat-left-text"></i>
+              <span class="badge bg-success badge-number">3</span> </a
+            ><!-- End Messages Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img src="img/messages-1.png" alt="" class="rounded-circle" />
+                  <div>
+                    <h4>Tony Stark</h4>
+                    <p>I love you 3000. salamualaykum walay kwartay natigom.</p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img src="img/messages-2.png" alt="" class="rounded-circle" />
+                  <div>
+                    <h4>Toby Maguire</h4>
+                    <p>
+                      Your friendly neighbourhood spiderman, my back my back
+                      my...
+                    </p>
+                    <p>6 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img src="img/messages-3.jpg" alt="" class="rounded-circle" />
+                  <div>
+                    <h4>Shiba Dogge</h4>
+                    <p>
+                      Ambot sa kambing na may bangs, aku gi ngan lan ku niyag
+                      burikat...
+                    </p>
+                    <p>8 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+            <!-- End Messages Dropdown Items -->
+          </li>
+          <!-- End Messages Nav -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img src="img/profile.jpg" alt="Profile" class="rounded-circle" />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >Bean</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Mr. Bean</h6>
+                <span>Admin</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-faq.html"
+                >
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="login.html"
+                >
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="admin.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#forms-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-journal-text"></i><span>Management</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="forms-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage-art.html">
+                <i class="bi bi-circle"></i><span>Artworks</span>
+              </a>
+            </li>
+            <li>
+              <a href="manage-act.html">
+                <i class="bi bi-circle"></i><span>Admin Activities</span>
+              </a>
+            </li>
+            <li>
+              <a href="manage-user.html">
+                <i class="bi bi-circle"></i><span>Users</span>
+              </a>
+            </li>
+            <li>
+              <a href="manage-news.html">
+                <i class="bi bi-circle"></i><span>News and Updates</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Forms Nav -->
+
+        <li class="nav-heading">More</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-faq.html">
+            <i class="bi bi-question-circle"></i>
+            <span>F.A.Q</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-contact.html">
+            <i class="bi bi-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link link" href="pages-blank.html">
+            <i class="bi bi-file-earmark"></i>
+            <span>Artists</span>
+          </a>
+        </li>
+        <!-- End Blank Page Nav -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Artists</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="admin.html">Home</a></li>
+            <li class="breadcrumb-item">Pages</li>
+            <li class="breadcrumb-item active">Artists</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section">
+        <div class="column">
+          <div class="row text-center">
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#"
+                    ><img src="img/artwork-2.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p>Ishikawa Yuki</p>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Details
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            title
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img
+                                  src="img/abstract.avif"
+                                  class="d-block w-100"
+                                  alt="..."
+                                />
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="img/artwork-1.jpg"
+                                  class="d-block w-100"
+                                  alt="..."
+                                />
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="img/artwork-2.jpg"
+                                  class="d-block w-100"
+                                  alt="..."
+                                />
+                              </div>
+                            </div>
+                            <button
+                              class="carousel-control-prev"
+                              type="button"
+                              data-bs-target="#carouselExample"
+                              data-bs-slide="prev"
+                            >
+                              <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                              ></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                              class="carousel-control-next"
+                              type="button"
+                              data-bs-target="#carouselExample"
+                              data-bs-slide="next"
+                            >
+                              <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                              ></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Save changes
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <br />
+                  <p>Theodore Duran</p>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2"
+                  >
+                    Details
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal2"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            title
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">...</div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Save changes
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-3.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-4.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-5.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-3.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/logo2.png" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <br />
+                  <a href="#">
+                    <img src="img/artwork-1.jpg" class="img-fluid" alt="..." />
+                  </a>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="apexcharts/apexcharts.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="chart.js/chart.umd.js"></script>
+    <script src="echarts/echarts.min.js"></script>
+    <script src="quill/quill.min.js"></script>
+    <script src="simple-datatables/simple-datatables.js"></script>
+    <script src="tinymce/tinymce.min.js"></script>
+    <script src="php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+  </body>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      <div class="social-links mt-2">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <br />
+      &copy; Copyright <strong><span>Pigmented Strokes</span></strong
+      >. All Rights Reserved
+    </div>
+  </footer>
+  <!-- End Footer -->
+</html>

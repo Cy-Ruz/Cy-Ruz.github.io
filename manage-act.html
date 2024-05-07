@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Admin | Management</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="img/logo2.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="quill/quill.snow.css" rel="stylesheet" />
+    <link href="quill/quill.bubble.css" rel="stylesheet" />
+    <link href="remixicon/remixicon.css" rel="stylesheet" />
+    <link href="simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="admin.html" class="logo d-flex align-items-center">
+          <img src="img/logo2.png" alt="" />
+          <span class="d-none d-lg-block">Activities</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a
+            ><!-- End Notification Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-chat-left-text"></i>
+              <span class="badge bg-success badge-number">3</span> </a
+            ><!-- End Messages Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img src="img/messages-1.png" alt="" class="rounded-circle" />
+                  <div>
+                    <h4>Tony Stark</h4>
+                    <p>I love you 3000. salamualaykum walay kwartay natigom.</p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img src="img/messages-2.png" alt="" class="rounded-circle" />
+                  <div>
+                    <h4>Toby Maguire</h4>
+                    <p>
+                      Your friendly neighbourhood spiderman, my back my back
+                      my...
+                    </p>
+                    <p>6 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img src="img/messages-3.jpg" alt="" class="rounded-circle" />
+                  <div>
+                    <h4>Shiba Dogge</h4>
+                    <p>
+                      Ambot sa kambing na may bangs, aku gi ngan lan ku niyag
+                      burikat...
+                    </p>
+                    <p>8 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+            <!-- End Messages Dropdown Items -->
+          </li>
+          <!-- End Messages Nav -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img src="img/profile.jpg" alt="Profile" class="rounded-circle" />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >Bean</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Mr.Bean</h6>
+                <span>Admin</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-faq.html"
+                >
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="index.html"
+                >
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="admin.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-target="#forms-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-journal-text"></i><span>Management</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="forms-nav"
+            class="nav-content collapse show"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="manage-art.html">
+                <i class="bi bi-circle"></i><span>Artworks</span>
+              </a>
+            </li>
+            <li>
+              <a href="manage-act.html" class="active">
+                <i class="bi bi-circle"></i><span>Admin Activities</span>
+              </a>
+            </li>
+            <li>
+              <a href="manage-user.html">
+                <i class="bi bi-circle"></i><span>Users</span>
+              </a>
+            </li>
+            <li>
+              <a href="manage-news.html">
+                <i class="bi bi-circle"></i><span>News and Updates</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Forms Nav -->
+
+        <li class="nav-heading">Pages</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-faq.html">
+            <i class="bi bi-question-circle"></i>
+            <span>F.A.Q</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-contact.html">
+            <i class="bi bi-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-blank.html">
+            <i class="bi bi-file-earmark"></i>
+            <span>Blank</span>
+          </a>
+        </li>
+        <!-- End Blank Page Nav -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Admin Activities</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="admin.html">Home</a></li>
+            <li class="breadcrumb-item">Management</li>
+            <li class="breadcrumb-item active">Activities</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Admin Activities</h5>
+
+                <!-- Table with stripped rows -->
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th>
+                        <b>Artwork Name</b>
+                      </th>
+                      <th>Artist Price</th>
+                      <th>Artirst</th>
+                      <th>Admin</th>
+                      <th>Activity Detail</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Fire and Water</td>
+                      <td>₱ 300</td>
+                      <td>Camilla</td>
+                      <td>Frieren</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Metamorphosis</td>
+                      <td>₱ 255</td>
+                      <td>Snow</td>
+                      <td>---</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Whole New World</td>
+                      <td>₱ 620</td>
+                      <td>Norman</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Willow</td>
+                      <td>₱ 1500</td>
+                      <td>Ramses</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Blossom</td>
+                      <td>₱ 550</td>
+                      <td>Peter</td>
+                      <td>---</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Queen Of Hearts</td>
+                      <td>₱ 350</td>
+                      <td>Einar</td>
+                      <td>Frieren</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Epsilon</td>
+                      <td>₱ 999</td>
+                      <td>Dean</td>
+                      <td>Stark</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Pearl Harbor</td>
+                      <td>₱ 1,999</td>
+                      <td>Rose</td>
+                      <td>Toby</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Deirdre Bridges</td>
+                      <td>₱ 599</td>
+                      <td>Reze</td>
+                      <td>Fern</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Noirsoul</td>
+                      <td>₱ 699</td>
+                      <td>Moircy</td>
+                      <td>Bean</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>PaleSkin</td>
+                      <td>₱ 450</td>
+                      <td>Germs</td>
+                      <td>Stark</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Quentin Salas</td>
+                      <td>₱ 350</td>
+                      <td>Loser</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Futura</td>
+                      <td>₱ 990</td>
+                      <td>Suarez</td>
+                      <td>---</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Lunarian</td>
+                      <td>₱ 299</td>
+                      <td>Mox</td>
+                      <td>Bean</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Thompson</td>
+                      <td>₱ 650</td>
+                      <td>Jepoy</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Mira Rocha</td>
+                      <td>₱ 599</td>
+                      <td>Jun Jun</td>
+                      <td>Toby</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Phillips</td>
+                      <td>₱ 555</td>
+                      <td>Goose</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Emerald</td>
+                      <td>₱ 444</td>
+                      <td>Cha</td>
+                      <td>Stark</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Gouls</td>
+                      <td>₱ 900</td>
+                      <td>Anamur</td>
+                      <td>Stark</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Whale</td>
+                      <td>₱ 255</td>
+                      <td>Haine</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Brooks</td>
+                      <td>₱ 600</td>
+                      <td>Oliver</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Krane</td>
+                      <td>₱ 899</td>
+                      <td>Salle</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Scarlett Hurst</td>
+                      <td>₱ 600</td>
+                      <td>Samson</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Scottish Summer/td></td>
+                      <td>₱ 300</td>
+                      <td>Meiji</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Desires</td>
+                      <td>₱ 666</td>
+                      <td>Goku</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Bishop</td>
+                      <td>₱ 3,500</td>
+                      <td>Elaine</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Peace</td>
+                      <td>₱ 355</td>
+                      <td>Denji</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Evangeline</td>
+                      <td>₱ 255</td>
+                      <td>Aslan</td>
+                      <td>---</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Watts</td>
+                      <td>₱ 777</td>
+                      <td>Veronica</td>
+                      <td>---</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>King Arthur</td>
+                      <td>₱ 5,000</td>
+                      <td>Patan</td>
+                      <td>Fern</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Singer</td>
+                      <td>₱ 984</td>
+                      <td>Ostra</td>
+                      <td>Fern</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Home</td>
+                      <td>₱ 432</td>
+                      <td>Arrah</td>
+                      <td>Fern</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Craig</td>
+                      <td>₱ 567</td>
+                      <td>Finn</td>
+                      <td>Fern</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Neighbourhood</td>
+                      <td>₱ 999</td>
+                      <td>Anne</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>School Campus</td>
+                      <td>₱ 600</td>
+                      <td>Rome</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Railroad</td>
+                      <td>₱ 255</td>
+                      <td>Randy</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Lois Laine</td>
+                      <td>₱ 900</td>
+                      <td>Chester</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Hop Bass</td>
+                      <td>₱ 500</td>
+                      <td>Wesley</td>
+                      <td>Toby</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Kalli</td>
+                      <td>₱ 200</td>
+                      <td>Renji</td>
+                      <td>Frieren</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Maria Clara</td>
+                      <td>₱ 500</td>
+                      <td>Neuve</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Fruits</td>
+                      <td>₱ 600</td>
+                      <td>George</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Connor</td>
+                      <td>₱ 255</td>
+                      <td>Gregor</td>
+                      <td>---</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Kanto Carr</td>
+                      <td>₱ 600</td>
+                      <td>Farida</td>
+                      <td>---</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Mediatek</td>
+                      <td>₱ 700</td>
+                      <td>Von</td>
+                      <td>---/td></td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Carver</td>
+                      <td>₱ 266</td>
+                      <td>Teves</td>
+                      <td>Frieren</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Pakistan</td>
+                      <td>₱ 444</td>
+                      <td>Candy</td>
+                      <td>Frieren</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Hedgehog</td>
+                      <td>₱/td></td>
+                      <td>Tracy</td>
+                      <td>Frieren</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Yamalube</td>
+                      <td>₱ 255</td>
+                      <td>Seph</td>
+                      <td>Frieren</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Cherry</td>
+                      <td>₱ 200</td>
+                      <td>Flint</td>
+                      <td>Frieren</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Lareina Jones</td>
+                      <td>₱ 987</td>
+                      <td>Linton</td>
+                      <td>Frieren</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>eiss</td>
+                      <td>₱222</td>
+                      <td>Léonard</td>
+                      <td>Frieren</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Bowery</td>
+                      <td>₱ 555</td>
+                      <td>Inu</td>
+                      <td>Bean</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Rush E</td>
+                      <td>₱ 650</td>
+                      <td>Nina</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Palm</td>
+                      <td>₱ 2,000</td>
+                      <td>Stade</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Vielka</td>
+                      <td>₱ 145</td>
+                      <td>Vrasene</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Cunningham</td>
+                      <td>₱ 860</td>
+                      <td>Meghan</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Shaw</td>
+                      <td>₱ 447</td>
+                      <td>Albany</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Imelda/td></td>
+                      <td>₱ 164</td>
+                      <td>Hanzo</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Beach</td>
+                      <td>₱ 501</td>
+                      <td>Jerry</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Garrett</td>
+                      <td>₱ 938</td>
+                      <td>Gavorrano</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Kerr</td>
+                      <td>₱ 1,724</td>
+                      <td>Gualdo</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Hudson</td>
+                      <td>₱ 944</td>
+                      <td>Salamanca</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Slayers</td>
+                      <td>₱ 1,276</td>
+                      <td>Bachira</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Caleb Livingston</td>
+                      <td>₱ 625</td>
+                      <td>Fate</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Sydney Meyer</td>
+                      <td>₱ 521</td>
+                      <td>Neutron</td>
+                      <td>Fern</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Lancelot/td></td>
+                      <td>₱ 700</td>
+                      <td>Odette</td>
+                      <td>Fern</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Algebra</td>
+                      <td>₱ 266</td>
+                      <td>Geneviv</td>
+                      <td>Fern</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Falcon</td>
+                      <td>₱ 3,178</td>
+                      <td>Sambre</td>
+                      <td>Fern</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Karen</td>
+                      <td>₱ 357</td>
+                      <td>Luis</td>
+                      <td>Bean</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Catdog</td>
+                      <td>₱ 2,500</td>
+                      <td>Vin</td>
+                      <td>Bean</td>
+                      <td>65%</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Ursa</td>
+                      <td>₱ 2,500</td>
+                      <td>Solenn</td>
+                      <td>Bean</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Winters</td>
+                      <td>₱ 866</td>
+                      <td>Blanca</td>
+                      <td>Toby</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Brock</td>
+                      <td>₱ 537</td>
+                      <td>Oban</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Ursa</td>
+                      <td>7629</td>
+                      <td>Neutron</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Kape</td>
+                      <td>₱ 150</td>
+                      <td>Veenendaal</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Rash</td>
+                      <td>₱ 150</td>
+                      <td>Ciku</td>
+                      <td>Toby</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Murphy</td>
+                      <td>₱ 845</td>
+                      <td>Mark</td>
+                      <td>Toby</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Portland</td>
+                      <td>₱ 500</td>
+                      <td>Bizon</td>
+                      <td>Toby</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Oily</td>
+                      <td>₱ 1,265</td>
+                      <td>Hamja</td>
+                      <td>Bean</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Caller</td>
+                      <td>₱ 3,315</td>
+                      <td>Ponzo</td>
+                      <td>Bean</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Viagra</td>
+                      <td>₱ 825</td>
+                      <td>Claude</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Hermione</td>
+                      <td>₱ 2,785</td>
+                      <td>Woody</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Dalton</td>
+                      <td>₱ 416</td>
+                      <td>Dude</td>
+                      <td>Bean</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Kramer</td>
+                      <td>₱ 380</td>
+                      <td>Pass</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Zachery</td>
+                      <td>₱ 730</td>
+                      <td>Collin</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Freedom</td>
+                      <td>₱ 4,077</td>
+                      <td>Eren</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>CWaller</td>
+                      <td>₱ 140</td>
+                      <td>Nolan</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Bersek</td>
+                      <td>₱ 532</td>
+                      <td>Guts</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Toadstar</td>
+                      <td>₱ 902</td>
+                      <td>Nazaire</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Vixxen</td>
+                      <td>₱ 653</td>
+                      <td>Bartula</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Lara</td>
+                      <td>₱ 241</td>
+                      <td>Sherlock</td>
+                      <td>Stark</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Hammer</td>
+                      <td>₱ 801</td>
+                      <td>Wahkanda</td>
+                      <td>---</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Nixon</td>
+                      <td>₱ 901</td>
+                      <td>Meztiso</td>
+                      <td>---</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Natch</td>
+                      <td>₱ 956</td>
+                      <td>Jez</td>
+                      <td>Frieren</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Cameeron</td>
+                      <td>₱ 836</td>
+                      <td>Valmonte</td>
+                      <td>Frieren</td>
+                      <td>Transaction</td>
+                      <td><span class="badge bg-success">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <td>Moises</td>
+                      <td>₱ 3,796</td>
+                      <td>Que</td>
+                      <td>Frieren</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Grace</td>
+                      <td>₱ 640</td>
+                      <td>Rodez</td>
+                      <td>Frieren</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Haviva</td>
+                      <td>₱ 136</td>
+                      <td>Suki</td>
+                      <td>Frieren</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Horn</td>
+                      <td>₱ 853</td>
+                      <td>Ursula</td>
+                      <td>Frieren</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                    <tr>
+                      <td>Zelenia Roman</td>
+                      <td>₱ 516</td>
+                      <td>Red</td>
+                      <td>Frieren</td>
+                      <td>Upload</td>
+                      <td><span class="badge bg-danger">Rejected</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        <div class="social-links mt-2">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <br />
+        &copy; Copyright <strong><span>Pigmented Strokes</span></strong
+        >. All Rights Reserved
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="apexcharts/apexcharts.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="chart.js/chart.umd.js"></script>
+    <script src="echarts/echarts.min.js"></script>
+    <script src="quill/quill.min.js"></script>
+    <script src="simple-datatables/simple-datatables.js"></script>
+    <script src="tinymce/tinymce.min.js"></script>
+    <script src="php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

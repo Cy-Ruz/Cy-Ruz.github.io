@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/index_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/img/logo2.png" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="glass-wrapper"></div>
+    </div>
+    <div
+      class="header"
+      data-aos="fade-down"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="1000"
+    >
+      <div
+        class="logo"
+        data-aos="fade-down"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1300"
+      >
+        Pigmented Strokes
+      </div>
+      <ul class="menu">
+        <li
+          data-aos="fade-down"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1500"
+        >
+          <a href="main_loggedin.html" class="Home" style="color: white"
+            >Home</a
+          >
+        </li>
+        <li
+          class="dropdown"
+          data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000"
+        >
+          <div class="menubar" onclick="myFunction(this)">
+            <div class="artwork">
+              <p style="font-family: Poppins">Artwork</p>
+            </div>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">Artists</a>
+            <a href="#">New Arrivals</a>
+            <a href="#featured">Featured Collections</a>
+          </div>
+        </li>
+        <li
+          data-aos="fade-down"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1700"
+        >
+          <a href="#" class="News">Exhibition</a>
+        </li>
+        <li
+          data-aos="fade-down"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="2100"
+        >
+          <a href="#" class="Contact">Contact</a>
+        </li>
+        <li
+          class="dropdown"
+          data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2800"
+        >
+          <a href="#" class="dropbtn"></a>
+          <div class="menubar" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">Buy</a>
+            <a href="#">Sell</a>
+            <a href="main.html">Log Out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section id="header">
+      <div class="details">
+        <header></header>
+        <div
+          class="hero-title"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1000"
+        >
+          <p
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1800"
+          >
+            Where Art Flourishes, Artists Thrive, and Collections Find Home
+          </p>
+          <h4
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          ></h4>
+          <div class="details"></div>
+        </div>
+      </div>
+      <div
+        class="slidercontainer"
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1800"
+      >
+        <div class="gallery">
+          <div class="img-box"><h3>1</h3></div>
+          <div class="img-box"><h3>2</h3></div>
+          <div class="img-box"><h3>3</h3></div>
+          <div class="img-box"><h3>4</h3></div>
+        </div>
+      </div>
+    </section>
+    <div id="featured" class="container">
+      <h1
+        data-aos="fade-down"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="2500"
+      >
+        Featured Collections
+      </h1>
+      <div
+        class="row"
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="2500"
+      >
+        <div class="col">
+          <a href="#" class="image-link">
+            <div
+              class="photo-container"
+              style="background-image: url(assets/img/abstract.avif)"
+            ></div>
+            <div class="slide">
+              <p>
+                Doloremque quisquam molestias, est laudantium vero aliquid
+                dolorum inventore atque sint perferendis qui dolor voluptas
+                consequuntur non.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="image-link">
+            <div
+              class="photo-container"
+              style="background-image: url(assets/img/colorful-rainbow-art.jpg)"
+            ></div>
+            <div class="slide">
+              <p>
+                Facere illo pariatur necessitatibus fugit quo impedit, quae,
+                corporis placeat recusandae dolor ipsa nobis!
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="image-link">
+            <div
+              class="photo-container"
+              style="
+                background-image: url(https://source.unsplash.com/600x250/?sig=179);
+              "
+            ></div>
+            <div class="slide">
+              <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="image-link">
+            <div
+              class="photo-container"
+              style="
+                background-image: url(https://source.unsplash.com/600x250/?sig=168);
+              "
+            ></div>
+
+            <div class="slide">
+              <p>
+                Autem possimus perspiciatis, eaque quos repudiandae modi labore
+                sed repellat dolorum magnam praesentium expedita esse tempore
+                saepe nulla.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="image-link">
+            <div
+              class="photo-container"
+              style="
+                background-image: url(https://source.unsplash.com/600x250/?sig=154);
+              "
+            ></div>
+            <div class="slide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="row"
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="2500"
+      >
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=95);
+            "
+          ></div>
+          <div class="slide">
+            <p>Veritatis eos similique eveniet tempora.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=279);
+            "
+          ></div>
+          <div class="slide">
+            <p>
+              Doloremque quisquam molestias, est laudantium vero aliquid dolorum
+              inventore atque sint perferendis qui dolor voluptas consequuntur
+              non.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=105);
+            "
+          ></div>
+
+          <div class="slide">
+            <p>
+              Facere illo pariatur necessitatibus fugit quo impedit, quae,
+              corporis placeat recusandae dolor ipsa nobis!
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=147);
+            "
+          ></div>
+
+          <div class="slide">
+            <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=66);
+            "
+          ></div>
+
+          <div class="slide">
+            <p>
+              Autem possimus perspiciatis, eaque quos repudiandae modi labore
+              sed repellat dolorum magnam praesentium expedita esse tempore
+              saepe nulla.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=202);
+            "
+          ></div>
+
+          <div class="slide">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="2500"
+      >
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=118);
+            "
+          ></div>
+          <div class="slide">
+            <p>Veritatis eos similique eveniet tempora.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=279);
+            "
+          ></div>
+          <div class="slide">
+            <p>
+              Doloremque quisquam molestias, est laudantium vero aliquid dolorum
+              inventore atque sint perferendis qui dolor voluptas consequuntur
+              non.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=267);
+            "
+          ></div>
+          <div class="slide">
+            <p>
+              Facere illo pariatur necessitatibus fugit quo impedit, quae,
+              corporis placeat recusandae dolor ipsa nobis!
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=281);
+            "
+          ></div>
+          <div class="slide">
+            <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=124);
+            "
+          ></div>
+          <div class="slide">
+            <p>
+              Autem possimus perspiciatis, eaque quos repudiandae modi labore
+              sed repellat dolorum magnam praesentium expedita esse tempore
+              saepe nulla.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=287);
+            "
+          ></div>
+          <div class="slide">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="2500"
+      >
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=231);
+            "
+          ></div>
+          <div class="slide">
+            <p>
+              Doloremque quisquam molestias, est laudantium vero aliquid dolorum
+              inventore atque sint perferendis qui dolor voluptas consequuntur
+              non.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=22);
+            "
+          ></div>
+          <div class="slide">
+            <p>
+              Facere illo pariatur necessitatibus fugit quo impedit, quae,
+              corporis placeat recusandae dolor ipsa nobis!
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=87);
+            "
+          ></div>
+          <div class="slide">
+            <p>Quam molestiae ipsa sapiente mollitia, nobis.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=194);
+            "
+          ></div>
+          <div class="slide">
+            <p>
+              Autem possimus perspiciatis, eaque quos repudiandae modi labore
+              sed repellat dolorum magnam praesentium expedita esse tempore
+              saepe nulla.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="photo-container"
+            style="
+              background-image: url(https://source.unsplash.com/600x250/?sig=14);
+            "
+          ></div>
+          <div class="slide">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        reiciendis beatae ipsam accusamus quam est, magni nam adipisci rerum
+        ducimus eius consequatur asperiores. Aspernatur officia consequuntur
+        asperiores, architecto vel autem!
+      </p>
+    </footer>
+    <div class="window" id="windowOverlay">
+      <div class="window-content">
+        <button class="close-btn">X</button>
+        <!-- Image and description will be displayed here -->
+        <div class="window-image"></div>
+        <div class="window-description"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all the clickable items
+      const clickableItems = document.querySelectorAll(".clickable-item");
+
+      // Add click event listener to each clickable item
+      clickableItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+          // Toggle the class to show/hide the slide
+          this.querySelector(".slide").classList.toggle("active");
+        });
+      });
+
+      // Get all the columns
+      const columns = document.querySelectorAll(".col");
+
+      // Iterate over each column and apply a random class with animation
+      columns.forEach(function (column) {
+        const randomAnimation =
+          Math.random() < 0.5 ? "slide-left" : "slide-right";
+        column.classList.add(randomAnimation);
+        column.style.opacity = 1; // Ensure the column is visible
+
+        // Attach click event listener to each column
+        column.addEventListener("click", function () {
+          const imageUrl =
+            column.querySelector(".photo-container").style.backgroundImage;
+          const description = column.querySelector(".slide p").textContent;
+
+          // Get the overlay and content elements
+          const overlay = document.getElementById("windowOverlay");
+          const imageContainer = document.querySelector(".window-image");
+          const descriptionContainer = document.querySelector(
+            ".window-description"
+          );
+
+          // Set image and description in the window
+          imageContainer.style.backgroundImage = imageUrl;
+          descriptionContainer.textContent = description;
+
+          // Show the window overlay
+          overlay.style.display = "block";
+        });
+      });
+
+      // Get the overlay and content elements
+      const overlay = document.getElementById("windowOverlay");
+      const window = document.querySelector(".window");
+      const closeButton = document.querySelector(".close-btn");
+
+      // Close the window when clicking outside the content
+      overlay.addEventListener("click", function (event) {
+        if (event.target === overlay) {
+          overlay.style.display = "block";
+          overlay.style.display = "none";
+        }
+      });
+
+      // Add event listener to close button
+      closeButton.addEventListener("click", function () {
+        overlay.style.display = "block";
+        window.style.display = "none"; // Hide the window when close button is clicked
+      });
+
+      // Add event listener to open button
+      const openButton = document.getElementById("open-window");
+      openButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default behavior (scrolling to the top)
+        window.style.display = "block"; // Show the window when open button is clicked
+      });
+    });
+
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+
+    // Assuming the password is stored in a variable named "password"
+    const password = "your_password";
+
+    // Assuming you have already logged in and want to hide the password in the URL
+    const urlWithoutPassword = window.location.href.split("?")[0]; // Get the current URL without query parameters
+
+    // Update the URL without the password
+    window.history.pushState({}, document.title, urlWithoutPassword);
+  </script>
+</html>
