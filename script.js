@@ -38,12 +38,10 @@ function endPosition() {
 }
 
 function draw(e) {
-    // Prevent default behavior for touch events
-    e.preventDefault();
+    e.preventDefault(); // Prevent default behavior for touch events
     
     if (!drawing) return;
 
-    // Handle both mouse and touch events
     let x, y;
     if (e.type === 'touchmove') {
         // Get touch coordinates
@@ -113,4 +111,22 @@ canvas.addEventListener('touchstart', (e) => {
     startPosition(e);
 });
 canvas.addEventListener('touchend', endPosition);
-canvas.addEventListener('touchmove', draw);
+canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    draw(e);
+});
+
+// Update pencil position for touch events
+document.addEventListener('touchmove', function(e) {
+    const pencil = document.getElementById("pencil");
+    
+    if (pencil) {
+        const touch = e.touches[0];
+        const pencilWidth = pencil.offsetWidth;
+        const pencilHeight = pencil.offsetHeight;
+        const x = touch.clientX - (pencilWidth / 2);
+        const y = touch.clientY - (pencilHeight / 2);
+        
+        pencil.style.transform = `translate(${x}px, ${y}px)`;
+    }
+});
